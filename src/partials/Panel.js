@@ -12,13 +12,13 @@ const Panel = (props) => {
   } = datum;
 
   return (
-    <Link to={`/details/${id}`}>
+    <Link to={`/details/${id}`} className={styles.link}>
       <div className={styles.panel}>
         <div className={styles.pane}>
           <img src={dark} alt={name} />
         </div>
         <div>
-          <p>{name}</p>
+          <p className={styles.title}>{name}</p>
         </div>
       </div>
     </Link>
