@@ -23,7 +23,7 @@ const HomePage = () => {
       <form className={styles.form}>
         <input type="search" onChange={(e) => searchHandler(e)} placeholder="Search by league name" />
       </form>
-      <div>
+      <div className={styles.panels}>
         {status
           ? filteredTeams.map((datum) => <Panel key={datum.id} datum={datum} />)
           : null}

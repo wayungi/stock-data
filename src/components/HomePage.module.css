@@ -19,3 +19,17 @@
     border-radius:5px;
     background-color: #fff;;
 }
+
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        background-color: lightblue;
+    }
+
+    .panels {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}

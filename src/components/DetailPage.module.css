@@ -51,3 +51,12 @@ span.abbr, span.slug {
     color: #fff;
     cursor:pointer;
 }
+
+@media only screen and (min-width: 600px) {
+    
+    .link {
+        width:40%;
+    }
+
+    
+  }

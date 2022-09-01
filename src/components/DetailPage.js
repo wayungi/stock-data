@@ -11,7 +11,7 @@ const DetailPage = () => {
     name,
     slug,
     abbr,
-    logos: { light },
+    logos: { dark },
   } = teams.filter((team) => team.id === param.id)[0];
 
   return (
@@ -19,7 +19,7 @@ const DetailPage = () => {
       <div className={styles.league}>
         <h1 className={styles.title}>{name}</h1>
         <div className={styles.imageTag}>
-          <img src={light} alt={name} />
+          <img src={dark} alt={name} />
         </div>
         <p className={styles.slugTag}>
           slug:

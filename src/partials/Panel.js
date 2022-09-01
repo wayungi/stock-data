@@ -6,28 +6,30 @@ import styles from './Panel.module.css';
 const Panel = (props) => {
   const { datum } = props;
   const {
-    logos: { dark },
+    logos: { light },
     name,
     id,
   } = datum;
 
   return (
-    <Link to={`/details/${id}`} className={styles.link}>
-      <div className={styles.panel}>
-        <div className={styles.pane}>
-          <img src={dark} alt={name} />
+    <div className={styles.panel}>
+      <Link to={`/details/${id}`} className={styles.link}>
+        <div className={styles.restore}>
+          <div className={styles.pane}>
+            <img src={light} alt={name} />
+          </div>
+          <div>
+            <p className={styles.title}>{name}</p>
+          </div>
         </div>
-        <div>
-          <p className={styles.title}>{name}</p>
-        </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
 Panel.defaultProps = {
   id: '',
-  dark: '',
+  light: '',
   name: 'no team',
   logos: {
     dark: '',
@@ -43,7 +45,7 @@ Panel.defaultProps = {
 
 Panel.propTypes = {
   id: PropTypes.string,
-  dark: PropTypes.string,
+  light: PropTypes.string,
   name: PropTypes.string,
   logos: PropTypes.instanceOf(Object),
   datum: PropTypes.instanceOf(Object),
