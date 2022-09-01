@@ -4,12 +4,10 @@ import Panel from '../partials/Panel';
 
 const HomePage = () => {
   const { status, data } = useSelector((state) => state.games);
-  console.log(data);
+  // console.log(data);
 
   return (
-    <div>
-      <Panel />
-    </div>
+    <div>{status ? data.map((datum) => <Panel key={datum.id} datum={datum} />) : null}</div>
   );
 };
 

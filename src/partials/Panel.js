@@ -2,10 +2,11 @@
 import PropTypes from 'prop-types';
 
 const Panel = (props) => {
+  const { datum } = props;
   const {
     logos: { dark },
     name,
-  } = props;
+  } = datum;
   return (
     <div>
       <div>
@@ -22,12 +23,16 @@ Panel.defaultProps = {
   logos: {
     dark: '',
   },
+  datum: {
+    id: 0, name: '', slug: '', abbr: '', logos: {},
+  },
 };
 
 Panel.propTypes = {
   dark: PropTypes.string,
   name: PropTypes.string,
   logos: PropTypes.instanceOf(Object),
+  datum: PropTypes.instanceOf(Object),
 };
 
 export default Panel;

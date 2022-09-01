@@ -23,7 +23,7 @@ const actionLeagues = () => async (dispatch) => {
     {
       method: 'GET',
       headers: {},
-    }
+    },
   );
   const result = await response.json();
   // console.log(result);
