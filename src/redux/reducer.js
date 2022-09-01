@@ -23,10 +23,11 @@ const actionLeagues = () => async (dispatch) => {
     {
       method: 'GET',
       headers: {},
-    },
+    }
   );
   const result = await response.json();
-  dispatch({ type: LEAGUES, action: result });
+  // console.log(result);
+  dispatch({ type: LEAGUES, payload: result });
 };
 
 export { actionLeagues };
