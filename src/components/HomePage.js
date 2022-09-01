@@ -16,8 +16,6 @@ const HomePage = () => {
     return datum.name.toLowerCase().includes(searchTerm);
   });
 
-  console.log(filteredTeams);
-
   return (
     <div>
       <form>
