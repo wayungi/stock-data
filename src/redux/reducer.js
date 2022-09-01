@@ -1,5 +1,3 @@
-/** @format */
-
 const LEAGUES = 'leagues/data/LEAGUES';
 
 const initialState = {
@@ -16,7 +14,11 @@ const gamesReducer = (state = initialState, action) => {
   }
 };
 
-/* action createors */
+/*
+action createors
+API used https://github.com/azharimm/football-standings-api
+ */
+
 const actionLeagues = () => async (dispatch) => {
   const response = await fetch(
     'https://api-football-standings.azharimm.site/leagues',
@@ -26,7 +28,6 @@ const actionLeagues = () => async (dispatch) => {
     },
   );
   const result = await response.json();
-  // console.log(result);
   dispatch({ type: LEAGUES, payload: result });
 };
 
