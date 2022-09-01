@@ -1,6 +1,8 @@
 /** @format */
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
+import styles from './HomePage.module.css';
+
 import Panel from '../partials/Panel';
 
 const HomePage = () => {
@@ -17,8 +19,8 @@ const HomePage = () => {
   });
 
   return (
-    <div>
-      <form>
+    <div className={styles.wrapper}>
+      <form className={styles.form}>
         <input type="search" onChange={(e) => searchHandler(e)} placeholder="Search" />
       </form>
       <div>
