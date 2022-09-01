@@ -6,9 +6,9 @@
 }
 
 .form {
-    outline:1px solid green;
     padding: 5px;
 }
+
 .form input {
     all:unset;
     width:100%;

@@ -1,6 +1,7 @@
 /** @format */
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import styles from './Panel.module.css';
 
 const Panel = (props) => {
   const { datum } = props;
@@ -12,8 +13,8 @@ const Panel = (props) => {
 
   return (
     <Link to={`/details/${id}`}>
-      <div>
-        <div>
+      <div className={styles.panel}>
+        <div className={styles.pane}>
           <img src={dark} alt={name} />
         </div>
         <div>
