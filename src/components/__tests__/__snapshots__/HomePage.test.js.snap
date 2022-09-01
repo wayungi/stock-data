@@ -5,26 +5,38 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <form>
+      <div
+        class="wrapper"
+      >
+        <form
+          class="form"
+        >
           <input
-            placeholder="Search"
+            placeholder="Search by league name"
             type="search"
           />
         </form>
-        <div />
+        <div
+          class="panels"
+        />
       </div>
     </div>
   </body>,
   "container": <div>
-    <div>
-      <form>
+    <div
+      class="wrapper"
+    >
+      <form
+        class="form"
+      >
         <input
-          placeholder="Search"
+          placeholder="Search by league name"
           type="search"
         />
       </form>
-      <div />
+      <div
+        class="panels"
+      />
     </div>
   </div>,
   "debug": [Function],
