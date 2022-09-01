@@ -1,4 +1,6 @@
-import { useParams } from 'react-router-dom';
+/** @format */
+
+import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const DeatilPage = () => {
@@ -9,7 +11,12 @@ const DeatilPage = () => {
   // console.log(param.id);
   console.log(team);
 
-  return (<div>Detail page</div>);
+  return (
+    <div>
+      <Link to="/">Back</Link>
+      <div>Detail page</div>
+    </div>
+  );
 };
 
 export default DeatilPage;
