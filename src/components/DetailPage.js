@@ -8,9 +8,6 @@ const DetailPage = () => {
   const teams = useSelector((state) => state.games.data);
   const team = teams.filter((team) => team.id === param.id)[0];
 
-  // console.log(param.id);
-  console.log(team);
-
   return (
     <div>
       <Link to="/">Back</Link>
