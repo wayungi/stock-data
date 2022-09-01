@@ -25,7 +25,7 @@ const Panel = (props) => {
 };
 
 Panel.defaultProps = {
-  id: 0,
+  id: '',
   dark: '',
   name: 'no team',
   logos: {
@@ -41,7 +41,7 @@ Panel.defaultProps = {
 };
 
 Panel.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   dark: PropTypes.string,
   name: PropTypes.string,
   logos: PropTypes.instanceOf(Object),
