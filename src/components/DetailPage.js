@@ -2,6 +2,7 @@
 
 import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import styles from './DetailPage.module.css';
 
 const DetailPage = () => {
   const param = useParams() || { id: 'arg.1' };
@@ -14,22 +15,22 @@ const DetailPage = () => {
   } = teams.filter((team) => team.id === param.id)[0];
 
   return (
-    <div>
-      <Link to="/">Back</Link>
-      <div>
-        <h1>{name}</h1>
-        <div>
+    <div className={styles.wrapper}>
+      <div className={styles.league}>
+        <h1 className={styles.title}>{name}</h1>
+        <div className={styles.imageTag}>
           <img src={light} alt={name} />
         </div>
-        <p>
+        <p className={styles.slugTag}>
           slug:
-          <span>{slug}</span>
+          <span className={styles.slug}>{slug}</span>
         </p>
-        <p>
-          Abbr :
-          <span>{abbr}</span>
+        <p className={styles.abbrTag}>
+          Abbreviation :
+          <span className={styles.abbr}>{abbr}</span>
         </p>
       </div>
+      <Link to="/" className={styles.link}>Back</Link>
     </div>
   );
 };
