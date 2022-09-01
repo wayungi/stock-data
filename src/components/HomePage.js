@@ -21,7 +21,7 @@ const HomePage = () => {
   return (
     <div className={styles.wrapper}>
       <form className={styles.form}>
-        <input type="search" onChange={(e) => searchHandler(e)} placeholder="Search" />
+        <input type="search" onChange={(e) => searchHandler(e)} placeholder="Search by league name" />
       </form>
       <div>
         {status
