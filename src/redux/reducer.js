@@ -7,7 +7,7 @@ const initialState = {
   data: [],
 };
 
-const reducer = (state = initialState, action) => {
+const gamesReducer = (state = initialState, action) => {
   switch (action.type) {
     case LEAGUES:
       return { ...initialState, ...action.payload };
@@ -17,7 +17,7 @@ const reducer = (state = initialState, action) => {
 };
 
 /* action createors */
-const leagues = () => async (dispatch) => {
+const actionLeagues = () => async (dispatch) => {
   const response = await fetch(
     'https://api-football-standings.azharimm.site/leagues',
     {
@@ -29,5 +29,5 @@ const leagues = () => async (dispatch) => {
   dispatch({ type: LEAGUES, action: result });
 };
 
-export { leagues };
-export default reducer;
+export { actionLeagues };
+export default gamesReducer;
