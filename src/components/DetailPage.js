@@ -4,25 +4,30 @@ import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const DetailPage = () => {
-  const param = useParams();
+  const param = useParams() || { id: 'arg.1' };
   const teams = useSelector((state) => state.games.data);
-  const team = teams.filter((team) => team.id === param.id)[0];
+  const {
+    name,
+    slug,
+    abbr,
+    logos: { light },
+  } = teams.filter((team) => team.id === param.id)[0];
 
   return (
     <div>
       <Link to="/">Back</Link>
       <div>
-        <h1>{team.name}</h1>
+        <h1>{name}</h1>
         <div>
-          <img src={team.logos.light} alt={team.name} />
+          <img src={light} alt={name} />
         </div>
         <p>
           slug:
-          <span>{team.slug}</span>
+          <span>{slug}</span>
         </p>
         <p>
           Abbr :
-          <span>{team.abbr}</span>
+          <span>{abbr}</span>
         </p>
       </div>
     </div>
