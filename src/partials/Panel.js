@@ -2,11 +2,14 @@
 import PropTypes from 'prop-types';
 
 const Panel = (props) => {
-  const { imgUrl, name } = props;
+  const {
+    logos: { dark },
+    name,
+  } = props;
   return (
     <div>
       <div>
-        <img src={imgUrl} alt={name} />
+        <img src={dark} alt={name} />
         <p>{name}</p>
       </div>
     </div>
@@ -14,13 +17,17 @@ const Panel = (props) => {
 };
 
 Panel.defaultProps = {
-  imgUrl: '',
+  dark: '',
   name: 'no team',
+  logos: {
+    dark: '',
+  },
 };
 
 Panel.propTypes = {
-  imgUrl: PropTypes.string,
+  dark: PropTypes.string,
   name: PropTypes.string,
+  logos: PropTypes.instanceOf(Object),
 };
 
 export default Panel;
