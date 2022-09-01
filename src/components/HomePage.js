@@ -8,12 +8,12 @@ const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const searchHandler = (e) => {
-    setSearchTerm(e.target.value);
+    setSearchTerm(e.target.value.toLowerCase());
   };
 
   const filteredTeams = data.filter((datum) => {
     if (searchTerm === '') return datum;
-    return datum.name.includes(searchTerm);
+    return datum.name.toLowerCase().includes(searchTerm);
   });
 
   console.log(filteredTeams);
