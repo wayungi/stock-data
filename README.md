@@ -30,8 +30,8 @@ Users can get more detaisl about a league by clicking on the league on the home 
 
 ### Cloning the repository
 - Create a directory.
-- Open a terminal in this directory and run this command: `git clone git@github.com:wayungi/math-magicians.git`.
-- cd math-maicians
+- Open a terminal in this directory and run this command: `git@github.com:wayungi/stock-data.git`.
+- cd stock-data
 - run npm install
 - run npm start
 - The website will in your default browser
