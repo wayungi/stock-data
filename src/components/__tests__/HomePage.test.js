@@ -2,16 +2,19 @@
 
 import React from 'react';
 import { render } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import App from './App';
-import { store } from './redux/store';
+import HomePage from '../HomePage';
+import { store } from '../../redux/store';
 
-describe('Test the App component', () => {
-  test('App component renders correctly', () => {
+describe('Test the HomePage component', () => {
+  test('HomePage renders correctly', () => {
     const tree = render(
       <React.StrictMode>
         <Provider store={store}>
-          <App />
+          <Router>
+            <HomePage />
+          </Router>
         </Provider>
       </React.StrictMode>,
     );
