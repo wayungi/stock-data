@@ -10,6 +10,12 @@ Math magicians is a website for all fans of mathematics. It is a Single Page App
 - HTML
 - JavaScript.
 
+### Quick View 
+#### Desktop
+<img src="./images/desktop-capstone.png">
+
+#### Mobile
+<img src="./images/mobile-capstone.png">
 
 ## Getting Started
 
