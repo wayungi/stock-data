@@ -3,10 +3,9 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-# Math magician
-Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
-- Make simple calculations.
-- Read a random math-related quote.
+# Football standings
+Football standings is a web app that lets users search for Leagues around the world.
+Users can get more detaisl about a league by clicking on the league on the home page which leds them to a details page.
 
 ### Built With
 
