@@ -1,3 +1,8 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
 # Math magician
 Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 - Make simple calculations.
@@ -33,7 +38,7 @@ Math magicians is a website for all fans of mathematics. It is a Single Page App
 - The website will in your default browser
 
 ## Video presenation
-[Video Presentation Link] (https://loom.com/share/8d21a16739084f18895706261b67d695)
+[Video Presentation Link](https://loom.com/share/8d21a16739084f18895706261b67d695)
 
 ## Live Demo
 
@@ -60,7 +65,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 - [Football standings API](https://github.com/azharimm/football-standings-api)
 - [Orignal design Idea is by Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
-- Coding partners @diegoyon, @Nyame-Wolf
 
 
 ## 📝 License
