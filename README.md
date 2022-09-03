@@ -51,6 +51,12 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgments
+- [Football standings API](https://github.com/azharimm/football-standings-api)
+- [Orignal design Idea is by Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- Coding partners @diegoyon, @Nyame-Wolf
+
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
