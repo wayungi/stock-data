@@ -26,9 +26,12 @@ Math magicians is a website for all fans of mathematics. It is a Single Page App
 - run npm start
 - The website will in your default browser
 
+## Video presenation
+[Video Presentation Link] (https://loom.com/share/8d21a16739084f18895706261b67d695)
+
 ## Live Demo
 
-[Live Demo Link](https://62f3a47ec8eb58468bf16555--tiny-valkyrie-fc7d66.netlify.app/)
+[Live Demo Link](https://exquisite-lollipop-092746.netlify.app/)
 
 ## Authors
 
